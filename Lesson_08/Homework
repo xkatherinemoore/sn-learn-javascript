@@ -1,0 +1,22 @@
+/* Question:
+1. Create 3 string variables
+2. Print the length of each string
+3. Concatenate, placing a new line character between each variable and save to a new variable
+4. Print the length of that new variable
+*/
+
+// 1. Create 3 string variables
+var a = 'milk';
+var b = 'eggs';
+var c = 'bread';
+
+// 2. Print the length of each string
+gs.info(a.length); //Should print 4
+gs.info(b.length); //Should print 4
+gs.info(c.length); //Should print 5
+
+// 3. Concatenate with new line characters and save as new variable
+var groceryList = a + '/n' + b + '/n' + c;
+
+// 4. Print the length of the new variable
+gs.info(groceryList.length); //Should print 15
