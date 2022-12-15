@@ -1,0 +1,31 @@
+/* LAB 4: 
+Create a script that takes a string variable "Hello world"
+and translates it to at least 3 different languages
+based on a 'language' variable.
+Make English the default language if a match isn't found.
+*/
+
+
+var greeting;
+var language = 'French';
+
+language = language.toLowerCase(); //converts the language to lowercase letters
+
+switch(language) {
+  case 'english':
+    greeting = 'Hello world';
+    break;
+  case 'french':
+    greeting = 'Bonjour le monde';
+    break;
+  case 'spanish':
+    greeting = 'Hola mundo';
+    break;
+  case 'german':
+    greeting = 'Hallo welt';
+    break;
+  default:
+    greeting = 'Hello world';
+}
+
+gs.info(greeting);
